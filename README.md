@@ -4,7 +4,7 @@
 <sub>Агент пишет код быстро. Этот скилл заставляет его писать <i>нужный</i> код — по рельсам.</sub></p>
 
 <p align="center">
-<a href="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml"><img src="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml/badge.svg" alt="tests"></a>
+<a href="https://github.com/t0uchY233/skills/actions/workflows/test.yml"><img src="https://github.com/t0uchY233/skills/actions/workflows/test.yml/badge.svg" alt="tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT"></a>
 <img src="https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square" alt="Agent Skill">
 <img src="https://img.shields.io/badge/Works_with-Claude_Code_·_Codex_·_Pi_·_any_.agents-blue?style=flat-square" alt="Works with">
@@ -13,6 +13,8 @@
 </p>
 
 **🇷🇺 [Читать на русском](README.ru.md)**
+
+> **Skills in this repo:** `engineering-rails` — engineering rails for AI coding agents. Install: `npx skills@latest add t0uchY233/skills`
 
 An agent skill that turns "just write me the code" into a repeatable engineering cycle — **context → design → plan → implement → verify → release → retro** — with gates enforced by a script, approvals that only a human can give, and a derail protocol that brings a vibe-coding session back on track without lecturing.
 
@@ -85,16 +87,21 @@ A rationalization table captured *verbatim* from baseline runs ("Тесты не
 
 ## Install
 
+**Any agent — one command** ([skills CLI](https://skills.sh), installs into Claude Code, Codex, Cursor, Pi and other agents):
+```bash
+npx skills@latest add t0uchY233/skills
+```
+
 **Claude Code** (plugin marketplace):
 ```
-/plugin marketplace add t0uchY233/engineering-rails-skill
-/plugin install engineering-rails@engineering-rails
+/plugin marketplace add t0uchY233/skills
+/plugin install engineering-rails@t0uchy233-skills
 ```
 
 **Any agent that reads project skills** (Claude Code, Codex CLI, Pi, and other `.agents/skills` readers):
 ```bash
-git clone https://github.com/t0uchY233/engineering-rails-skill /tmp/engineering-rails
-mkdir -p .agents/skills && cp -r /tmp/engineering-rails/skills/engineering-rails .agents/skills/
+git clone https://github.com/t0uchY233/skills /tmp/t0uchy233-skills
+mkdir -p .agents/skills && cp -r /tmp/t0uchy233-skills/skills/engineering-rails .agents/skills/
 # Claude Code reads .claude/skills — link it once:
 mkdir -p .claude/skills && ln -s ../../.agents/skills/engineering-rails .claude/skills/engineering-rails
 ```
