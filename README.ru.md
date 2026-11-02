@@ -3,6 +3,7 @@
 <p align="center"><b>Агент пишет код быстро. Этот скилл заставляет его писать <i>нужный</i> код — по рельсам.</b></p>
 
 <p align="center">
+<a href="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml"><img src="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml/badge.svg" alt="tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT"></a>
 <img src="https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square" alt="Agent Skill">
 <img src="https://img.shields.io/badge/Работает_с-Claude_Code_·_Codex_·_Pi_·_любым_.agents-blue?style=flat-square" alt="Работает с">
