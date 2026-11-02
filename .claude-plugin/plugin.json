@@ -1,0 +1,14 @@
+{
+  "name": "engineering-rails",
+  "description": "Keeps AI-assisted development on engineering rails: context → design → plan → implement → verify → release → retro, with script-enforced gates, human approvals, and a derail protocol that steers vibe-coding back on track.",
+  "version": "0.4.0",
+  "author": {
+    "name": "Sardor",
+    "url": "https://github.com/t0uchY233"
+  },
+  "homepage": "https://github.com/t0uchY233/engineering-rails-skill",
+  "repository": "https://github.com/t0uchY233/engineering-rails-skill",
+  "license": "MIT",
+  "keywords": ["skills", "engineering", "process", "quality-gates", "vibe-coding", "agents"],
+  "skills": "./skills/"
+}

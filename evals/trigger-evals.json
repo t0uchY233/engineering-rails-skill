@@ -1,0 +1,82 @@
+[
+ {
+  "query": "в оформление заказа надо добавить доставку: курьер 300р, самовывоз бесплатно",
+  "should_trigger": true
+ },
+ {
+  "query": "почему GET /orders/abc падает с 500? поправь",
+  "should_trigger": true
+ },
+ {
+  "query": "сделай рефакторинг pricing.py, там каша",
+  "should_trigger": true
+ },
+ {
+  "query": "прикрути авторизацию по токену к API",
+  "should_trigger": true
+ },
+ {
+  "query": "можешь быстро накидать эндпоинт списка заказов клиента?",
+  "should_trigger": true
+ },
+ {
+  "query": "добавь логирование ошибок в api.py, чтобы видеть, что падает",
+  "should_trigger": true
+ },
+ {
+  "query": "хочу чат-бота поддержки на LLM, который отвечает клиенту по статусу заказа",
+  "should_trigger": true
+ },
+ {
+  "query": "сделай, чтобы заказы сохранялись в sqlite, а не в памяти",
+  "should_trigger": true
+ },
+ {
+  "query": "добавь скидку постоянным клиентам 5% и всё, без лишних вопросов",
+  "should_trigger": true
+ },
+ {
+  "query": "тест test_no_discount выглядит слабым, допиши нормальные тесты на pricing",
+  "should_trigger": true
+ },
+ {
+  "query": "объясни, как работает calculate_total",
+  "should_trigger": false
+ },
+ {
+  "query": "что такое идемпотентность эндпоинта возврата и зачем она нужна?",
+  "should_trigger": false
+ },
+ {
+  "query": "посчитай, сколько строк python-кода в проекте",
+  "should_trigger": false
+ },
+ {
+  "query": "сделай ревью shop/api.py: только замечания списком, ничего не меняй",
+  "should_trigger": false
+ },
+ {
+  "query": "какая версия python тут установлена?",
+  "should_trigger": false
+ },
+ {
+  "query": "сравни Flask и FastAPI для такого проекта, код не трогай",
+  "should_trigger": false
+ },
+ {
+  "query": "найди, где в проекте используется TAX_RATE",
+  "should_trigger": false
+ },
+ {
+  "query": "запусти python3 -c 'from shop.pricing import calculate_total; print(calculate_total([(10,3)]))' и скажи результат",
+  "should_trigger": false
+ },
+ {
+  "query": "составь список вопросов, которые стоит задать заказчику про промокоды, в файл не пиши",
+  "should_trigger": false
+ },
+ {
+  "query": "нарисуй в ответе ascii-схему архитектуры этого проекта",
+  "should_trigger": false
+ }
+]

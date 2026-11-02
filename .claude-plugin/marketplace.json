@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "engineering-rails",
+  "metadata": {
+    "description": "Engineering rails for AI coding agents: stage gates, human approvals, derail protocol."
+  },
+  "owner": {
+    "name": "Sardor",
+    "url": "https://github.com/t0uchY233"
+  },
+  "plugins": [
+    {
+      "name": "engineering-rails",
+      "description": "Keeps AI-assisted development on engineering rails with script-enforced stage gates and human approvals.",
+      "version": "0.4.0",
+      "source": "./",
+      "category": "development",
+      "homepage": "https://github.com/t0uchY233/engineering-rails-skill",
+      "tags": ["skills", "engineering", "process", "quality-gates", "vibe-coding"]
+    }
+  ]
+}
