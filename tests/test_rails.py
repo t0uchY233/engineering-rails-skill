@@ -260,7 +260,7 @@ class RailsTest(unittest.TestCase):
     def test_back_voids_approvals(self):
         self.go_to_implement()
         code, out = self.run_cmd("back", "design", "--reason", "забыли требование")
-        self.assertEqual(code, 1)  # status after back: gate blocked again (approval voided)
+        self.assertEqual(code, 0, out)  # back succeeded; the gate is blocked again (approval voided)
         st = rails.Rails(self.root).load()
         self.assertEqual(st["stage"], "design")
         self.assertEqual(st["approvals"], {})

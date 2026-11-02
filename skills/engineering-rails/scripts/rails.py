@@ -400,7 +400,8 @@ def cmd_start(r: Rails, a) -> int:
     r.log(st, "start", lane=a.lane, why=a.why)
     materialize(r, st)
     print(f"task {tid} started, lane={a.lane}{' (AI feature: EVALs required)' if a.ai else ''}")
-    return cmd_status(r, a)
+    cmd_status(r, a)  # informational: the new stage's gate is expected to be blocked
+    return 0
 
 
 def cmd_status(r: Rails, a) -> int:
@@ -512,7 +513,9 @@ def cmd_advance(r: Rails, a) -> int:
     r.log(st, "advance", **{"from": prev})
     materialize(r, st)
     print(f"{prev} → {st['stage']}")
-    return cmd_status(r, a) if st["stage"] != "done" else 0
+    if st["stage"] != "done":
+        cmd_status(r, a)  # informational: the new stage's gate is expected to be blocked
+    return 0
 
 
 def cmd_back(r: Rails, a) -> int:
@@ -531,7 +534,8 @@ def cmd_back(r: Rails, a) -> int:
     r.save(st)
     r.log(st, "back", **{"from": prev, "reason": a.reason})
     print(f"{prev} → back to {a.stage} ({a.reason}); approvals from {a.stage} on must be renewed")
-    return cmd_status(r, a)
+    cmd_status(r, a)
+    return 0
 
 
 def cmd_lane(r: Rails, a) -> int:
@@ -553,7 +557,8 @@ def cmd_lane(r: Rails, a) -> int:
     print(f"lane {old} → {new}. Artifacts already written stay; the current gate now uses '{new}' rules.")
     if stage_file and stage_file.exists():
         print(f"review {rel(r, stage_file)}: sections required for '{new}' may differ")
-    return cmd_status(r, a)
+    cmd_status(r, a)
+    return 0
 
 
 def cmd_can_edit(r: Rails, a) -> int:
