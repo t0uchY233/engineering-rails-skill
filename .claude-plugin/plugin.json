@@ -6,8 +6,8 @@
     "name": "Sardor",
     "url": "https://github.com/t0uchY233"
   },
-  "homepage": "https://github.com/t0uchY233/skills",
-  "repository": "https://github.com/t0uchY233/skills",
+  "homepage": "https://github.com/t0uchY233/engineering-rails-skill",
+  "repository": "https://github.com/t0uchY233/engineering-rails-skill",
   "license": "MIT",
   "keywords": ["skills", "engineering", "process", "quality-gates", "vibe-coding", "agents"],
   "skills": "./skills/"

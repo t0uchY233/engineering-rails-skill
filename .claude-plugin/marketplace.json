@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "t0uchy233-skills",
+  "name": "engineering-rails",
   "metadata": {
-    "description": "Agent skills by t0uchY233."
+    "description": "Engineering rails for AI coding agents: stage gates, human approvals, derail protocol."
   },
   "owner": {
     "name": "Sardor",
@@ -15,7 +15,7 @@
       "version": "0.4.0",
       "source": "./",
       "category": "development",
-      "homepage": "https://github.com/t0uchY233/skills",
+      "homepage": "https://github.com/t0uchY233/engineering-rails-skill",
       "tags": [
         "skills",
         "engineering",

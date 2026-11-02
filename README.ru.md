@@ -3,7 +3,7 @@
 <p align="center"><b>Агент пишет код быстро. Этот скилл заставляет его писать <i>нужный</i> код — по рельсам.</b></p>
 
 <p align="center">
-<a href="https://github.com/t0uchY233/skills/actions/workflows/test.yml"><img src="https://github.com/t0uchY233/skills/actions/workflows/test.yml/badge.svg" alt="tests"></a>
+<a href="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml"><img src="https://github.com/t0uchY233/engineering-rails-skill/actions/workflows/test.yml/badge.svg" alt="tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT"></a>
 <img src="https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square" alt="Agent Skill">
 <img src="https://img.shields.io/badge/Работает_с-Claude_Code_·_Codex_·_Pi_·_любым_.agents-blue?style=flat-square" alt="Работает с">
@@ -12,8 +12,6 @@
 </p>
 
 **🇬🇧 [Read in English](README.md)**
-
-> **Скиллы в этом репозитории:** `engineering-rails` — инженерные рельсы для AI-агентов. Установка: `npx skills@latest add t0uchY233/skills`
 
 Скилл для AI-агентов, который превращает «просто напиши код» в повторяемый инженерный цикл — **контекст → дизайн → план → реализация → проверка → релиз → ретро**. Гейты держит скрипт, одобрение может дать только человек, а протокол возврата на рельсы разворачивает вайбкодинг обратно без нотаций.
 
@@ -88,19 +86,19 @@ flowchart LR
 
 **Любой агент — одной командой** ([skills CLI](https://skills.sh), ставит в Claude Code, Codex, Cursor, Pi и другие агенты):
 ```bash
-npx skills@latest add t0uchY233/skills
+npx skills@latest add t0uchY233/engineering-rails-skill
 ```
 
 **Claude Code** (маркетплейс плагинов):
 ```
-/plugin marketplace add t0uchY233/skills
-/plugin install engineering-rails@t0uchy233-skills
+/plugin marketplace add t0uchY233/engineering-rails-skill
+/plugin install engineering-rails@engineering-rails
 ```
 
 **Любой агент, читающий скиллы проекта** (Claude Code, Codex CLI, Pi и другие, читающие `.agents/skills`):
 ```bash
-git clone https://github.com/t0uchY233/skills /tmp/t0uchy233-skills
-mkdir -p .agents/skills && cp -r /tmp/t0uchy233-skills/skills/engineering-rails .agents/skills/
+git clone https://github.com/t0uchY233/engineering-rails-skill /tmp/engineering-rails
+mkdir -p .agents/skills && cp -r /tmp/engineering-rails/skills/engineering-rails .agents/skills/
 # Claude Code читает .claude/skills — один раз сделайте ссылку:
 mkdir -p .claude/skills && ln -s ../../.agents/skills/engineering-rails .claude/skills/engineering-rails
 ```
